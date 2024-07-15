@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "twind": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "name": "ZFashion",
+  "version": "1.0.0",
+  "main": "",
+  "author": "Jasur",
+  "license": "MIT"
+}

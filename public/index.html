@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>ZFashion</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon 1.svg" type="image/x-icon">
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="output.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="overflow-hidden">
+
+    <!-- NAVIGATION -->
+    <header class="mt-5">
+        <nav class="flex justify-around items-center">
+            <!-- START Select Lang -->
+            <div class="flex gap-4">
+                <span class="cursor-pointer">Рус</span>
+                <div class="w-[1px] mt-1 h-5 bg-gray-300"></div>
+                <span class="cursor-pointer">O’zb</span>
+            </div>
+            <!-- END Select Lang -->
+            
+            <!-- START X ICON -->
+            <div>
+                <i class="fa-solid fa-xmark text-gray-400 cursor-pointer"></i>
+            </div>
+            <!-- END X ICON -->
+        </nav>
+    </header>
+    <!-- END NAVIGATION -->
+
+    <!-- START REGISTRATION -->
+    <div class="flex items-center justify-center min-h-screen bg-background">
+        <div class="w-full max-w-md p-8 space-y-6 bg-white rounded-lg">
+            <div class="flex justify-center mb-6">
+                <img src="assets/images/Group 45.svg" alt="ZFashion logo" />
+            </div>
+            <h2 class="text-center text-2xl font-semibold text-foreground">Добро пожаловать!</h2>
+            <p class="text-center text-accent mt-2 text-[#8E969E]">Вход в ваш аккаунт</p>
+            <form class="space-y-4">
+                <div>
+                    <label for="phone" class="sr-only">Номер телефона</label>
+                    <input id="phone" name="phone" type="text" autocomplete="phone" required
+                        class="w-full px-3 py-2 border rounded-md bg-input text-foreground border-border"
+                        placeholder="+998" />
+                </div>
+                <div>
+                    <label for="password" class="sr-only">Пароль</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required class="w-full px-3 py-2 border rounded-md bg-input text-foreground border-border" placeholder="Пароль" />
+                </div>
+                <div>
+                    <button type="submit"
+                        class="w-full px-4 py-2 font-bold text-white bg-[#171F26] rounded-md hover:bg-primary/80">Войти</button>
+                </div>
+                <div class="text-center text-sm font-semibold text-[#171F26]">
+                    <a href="#" class="text-muted-foreground">Забыли пароль?</a>
+                </div>
+                <div>
+                    <button type="button" class="w-full px-4 py-2 font-bold text-foreground bg-secondary rounded-md hover:bg-secondary/80">Зарегистрироваться</button>
+                </div>
+            </form>
+            <p class="mt-6 text-center text-muted-foreground">© ZFashion 2020</p>
+        </div>
+    </div>
+    <!-- END REGISTRATION -->
+
+</body>
+
+</html>
